@@ -23,7 +23,7 @@ cage.addEventListener('click', hideCage);
 
 function showCage(e){
     if (cage.classList.contains('cage_hidden')) {
-        cage.classList.remove('cage_hidden');
+        cage.classList.remove('cage_hidden', 'cage_shutup');
         nanana.play();
     }
 }
