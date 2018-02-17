@@ -1,0 +1,25 @@
+
+
+{
+    "name": "Annoying Cage",
+    "description" : "Cage disturb you from browsing",
+    "version": "0.1",
+    "manifest_version": 2,
+    "browser_action": {
+      "default_icon": "icon.png"
+    },
+    "content_scripts": [
+        {
+          "matches": ["http://*/*", "https://*/*"],
+          "js": ["mutation.js"],
+          "css": ["mutation.css"]
+        }
+    ],
+    "permissions": [
+        "activeTab"
+    ],
+    "web_accessible_resources": [
+      "i/*"
+    ]
+  }
+

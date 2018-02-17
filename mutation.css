@@ -1,0 +1,46 @@
+
+body {
+    background: orange !important;
+}
+
+.cage {
+    background: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/1676808/nikolas.png") no-repeat;
+    width: 584px;
+    height: 405px;
+    position: fixed;
+    bottom: 0px;
+    z-index: 1000;
+    transition: bottom 0.8s ease-in;
+    left: 50vw;
+    margin-left: -292px;
+}
+
+.cage_shutup .cage__jaw {
+    animation: none;
+    top: 210px;
+}
+
+.cage.cage_hidden {
+    bottom: -405px;
+    transition: bottom 3s ease-out;
+}
+
+.cage__jaw {
+    background: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/1676808/jaw.png") no-repeat;
+    width: 56px;
+    height: 63px;
+    top: 219px;
+    left: 287px;
+    position: absolute;
+    animation: talk 0.15s infinite;
+    animation-direction: alternate;
+}
+
+@keyframes talk {
+    0% {
+        top: 219px;
+    }
+    100% {
+        top: 240px;
+    }
+}
