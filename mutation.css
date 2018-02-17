@@ -1,7 +1,9 @@
 
+
 body {
     background: orange !important;
-}
+} 
+
 
 .cage {
     background: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/1676808/nikolas.png") no-repeat;
